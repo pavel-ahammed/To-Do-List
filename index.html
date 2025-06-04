@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-[#00bcff] flex justify-center">
+    <h1
+      class="text-2xl md:text-4xl text-[#ffb86a] font-bold text-center absolute top-[20px]"
+    >
+      Things to Do
+    </h1>
+    <form
+      class="form mt-20 shadow-md bg-[#7bf1a8] w-full max-w-[350px] md:max-w-[500px] rounded-lg flex flex-col"
+    >
+      <input
+        type="text"
+        class="input rounded-t-lg px-3 py-4 border-none text-xl"
+        placeholder="Enter your task"
+        autocomplete="off"
+      />
+      <ul class="list flex flex-col justify-center gap-4">
+        <!-- <li>
+          <i class="fas fa-check-square"></i>Buy Milk
+          <i class="fas fa-trash"></i>
+        </li>
+        <li class="checked">
+          <i class="fas fa-check-square"></i> Call David
+          <i class="fas fa-trash"></i>
+        </li> -->
+      </ul>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

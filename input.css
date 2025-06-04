@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list li {
+  list-style-type: none;
+  padding: 20px 20px 20px 40px;
+  font-family: cursive;
+  border-top: dotted;
+  border-color: darkgray;
+  position: relative;
+}
+
+.list li .fa-check-square {
+  position: absolute;
+  /* padding-right: 10px; */
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 20px;
+  color: blue;
+}
+.list li .fa-trash {
+  color: red;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.list li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square {
+  color: darkgray;
+}
